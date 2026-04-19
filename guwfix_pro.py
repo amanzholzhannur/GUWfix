@@ -6,7 +6,7 @@ import streamlit.components.v1 as components
 
 # ─── CONFIG ───────────────────────────────────────────────────────────────────
 
-st.set_page_config(page_title="GUWfix Pro", page_icon="🛣️", layout="centered")
+
 # Настройка вкладки браузера
 st.set_page_config(
     page_title="GUWfix", 
