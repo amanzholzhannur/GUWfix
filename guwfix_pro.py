@@ -6,36 +6,8 @@ import streamlit.components.v1 as components
 
 # ─── CONFIG ───────────────────────────────────────────────────────────────────
 
+st.set_page_config(page_title="GUWfix Pro", page_icon="🛣️", layout="centered")
 
-# Настройка вкладки браузера
-st.set_page_config(
-    page_title="GUWfix", 
-    page_icon="GUWfix.jpg", 
-    layout="centered"
-)
-
-# Настройка иконки для главного экрана смартфона
-st.markdown(
-    f"""
-    <head>
-        <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/amanzholzhanur/GUWfix/main/GUWfix.jpg">
-        <link rel="icon" href="https://raw.githubusercontent.com/amanzholzhanur/GUWfix/main/GUWfix.jpg">
-        
-        <meta name="apple-mobile-web-app-title" content="GUWfix">
-        
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    </head>
-    <style>
-        /* Убираем лишний отступ сверху, чтобы дизайн смотрелся чище */
-        .block-container {{
-            padding-top: 3rem;
-        }}
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 USER_FILE      = "users_v2.csv"
 REP_FILE       = "reports_v2.csv"
 ADMIN_EMAIL    = "admin@guwfix.kz"
